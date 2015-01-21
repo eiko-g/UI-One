@@ -1,0 +1,16 @@
+.main-header,.main-content,.main-footer{width: 90%;max-width: 960px;margin: auto;}
+.main-header,.main-footer{text-align: center;}
+
+#guide-list{position: fixed;width: 200px;top: 0;right: 0;background-color: rgba(255,255,255,0.8);}
+#guide-list ul,#guide-list ol{margin: 0;padding: 0;}
+#guide-list ul ol{margin-left: 1em;}
+#guide-list li a{color: #33b5e5;text-decoration: none;}
+
+code,pre{font-family: "Source Code Pro";}
+
+/* Back To Top */
+#backtoTop{background-color:#eee;border-radius:100%;bottom:10%;height:48px;position:fixed;right:-100px;width:48px;transition:0.5s;-webkit-transition:0.5s}
+#backtoTop.button--show{right:10px}
+.per{font-size:16px;height:48px;line-height:48px;position:absolute;text-align:center;top:0;width:48px;color:#555;cursor:pointer}
+.per:before{content:attr(data-percent)}
+.per:hover:before{content:"↑";font-size:20px}

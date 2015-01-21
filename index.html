@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UI-One Test Page</title>
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/ui-one.css">
+  <script src="static/script/jquery-1.11.2.min.js"></script>
+
+  <script src="static/script/notification.js"></script>
+
+  <link rel="stylesheet" href="code/style-testpage.css">
+  <script src="code/script.js"></script>
+</head>
+<body>
+
+<header class="main-header">
+  <h1>Style Test Page</h1>
+</header>
+
+<section class="main-content">
+<p>Last update：2015-1-20 15:28:01</p>
+<div id="buttons">
+
+  <div id="default-bottons">
+    <h2>按钮 ( 默认尺寸 )</h2>
+    <p>
+      <a class="button">button</a>
+      <a class="button disable">button disabled</a>
+    </p>
+    <p>用法：<code>class="button button-*color_name*"</code></p>
+    <p>已知问题： 用了 <code>border-radius</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button button-grey">button grey</a>
+      <a class="button button-red">button red</a>
+      <a class="button button-blue">button blue</a>
+      <a class="button button-green">button green</a>
+      <a class="button button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="rounded-buttons">
+    <h2>按钮 ( 圆角 )</h2>
+    <p>用法：<code>class="button <strong>button-rounded</strong> button-*color_name*"</code></p>
+    <p>已知问题：用了 <code>border-radius</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button button-rounded button-grey">button grey</a>
+      <a class="button button-rounded button-red">button red</a>
+      <a class="button button-rounded button-blue">button blue</a>
+      <a class="button button-rounded button-green">button green</a>
+      <a class="button button-rounded button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="flat-buttons">
+    <h2>按钮 ( 扁平 )</h2>
+    <p>用法：<code>class="button <strong>button-flat</strong> button-*color_name*"</code></p>
+    <p>已知问题：IE 太傻逼了所以看起来跟上面那些样式没啥区别。</p>
+    <p>
+      <a class="button button-flat button-grey">button grey</a>
+      <a class="button button-flat button-red">button red</a>
+      <a class="button button-flat button-blue">button blue</a>
+      <a class="button button-flat button-green">button green</a>
+      <a class="button button-flat button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="line-buttons">
+    <h2>按钮 ( 描线 &amp;&amp; ( 圆角, 扁平 ) )</h2>
+    <p>用法：<code>class="button <strong>button-line</strong> button-*color_name*"</code></p>
+    <p>已知问题：用了 <code>border-radius</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button button-line button-grey">button grey</a>
+      <a class="button button-line button-red">button red</a>
+      <a class="button button-line button-blue">button blue</a>
+      <a class="button button-line button-green">button green</a>
+      <a class="button button-line button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button button-rounded button-line button-grey">button grey</a>
+      <a class="button button-rounded button-line button-red">button red</a>
+      <a class="button button-rounded button-line button-blue">button blue</a>
+      <a class="button button-rounded button-line button-green">button green</a>
+      <a class="button button-rounded button-line button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button button-flat button-line button-grey">button grey</a>
+      <a class="button button-flat button-line button-red">button red</a>
+      <a class="button button-flat button-line button-blue">button blue</a>
+      <a class="button button-flat button-line button-green">button green</a>
+      <a class="button button-flat button-line button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="disabled-buttons">
+    <h2>按钮 ( 禁用 )</h2>
+    <p>用法：<code>class="button <strong>disable</strong> button-*color_name*"</code></p>
+    <p><code>box-shadow</code> 属性的阴影会被清除。</p>
+    <p>已知问题：用了 <code>border-radius</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button disable button-grey">button grey</a>
+      <a class="button disable button-red">button red</a>
+      <a class="button disable button-blue">button blue</a>
+      <a class="button disable button-green">button green</a>
+      <a class="button disable button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button disable button-rounded button-grey">button grey</a>
+      <a class="button disable button-rounded button-red">button red</a>
+      <a class="button disable button-rounded button-blue">button blue</a>
+      <a class="button disable button-rounded button-green">button green</a>
+      <a class="button disable button-rounded button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button disable button-flat button-grey">button grey</a>
+      <a class="button disable button-flat button-red">button red</a>
+      <a class="button disable button-flat button-blue">button blue</a>
+      <a class="button disable button-flat button-green">button green</a>
+      <a class="button disable button-flat button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button disable button-line button-grey">button grey</a>
+      <a class="button disable button-line button-red">button red</a>
+      <a class="button disable button-line button-blue">button blue</a>
+      <a class="button disable button-line button-green">button green</a>
+      <a class="button disable button-line button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button disable button-rounded button-line button-grey">button grey</a>
+      <a class="button disable button-rounded button-line button-red">button red</a>
+      <a class="button disable button-rounded button-line button-blue">button blue</a>
+      <a class="button disable button-rounded button-line button-green">button green</a>
+      <a class="button disable button-rounded button-line button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button disable button-flat button-line button-grey">button grey</a>
+      <a class="button disable button-flat button-line button-red">button red</a>
+      <a class="button disable button-flat button-line button-blue">button blue</a>
+      <a class="button disable button-flat button-line button-green">button green</a>
+      <a class="button disable button-flat button-line button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="shadowed-buttons">
+    <h2>按钮 ( 阴影 )</h2>
+    <p>用法：<code>class="button <strong>shadow</strong> button-*color_name*"</code></p>
+    <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button shadow button-grey">button grey</a>
+      <a class="button shadow button-red">button red</a>
+      <a class="button shadow button-blue">button blue</a>
+      <a class="button shadow button-green">button green</a>
+      <a class="button shadow button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button shadow button-line button-grey">button grey</a>
+      <a class="button shadow button-line button-red">button red</a>
+      <a class="button shadow button-line button-blue">button blue</a>
+      <a class="button shadow button-line button-green">button green</a>
+      <a class="button shadow button-line button-yellow">button yellow</a>
+    </p>
+  </div>
+
+  <div id="color-shadowed-buttons">
+    <h2>按钮 ( 彩色阴影 )</h2>
+    <p>用法：<code>class="button <strong>shadow shadow-color</strong> button-*color_name*"</code></p>
+    <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+    <p>
+      <a class="button shadow shadow-color button-grey">button grey</a>
+      <a class="button shadow shadow-color button-red">button red</a>
+      <a class="button shadow shadow-color button-blue">button blue</a>
+      <a class="button shadow shadow-color button-green">button green</a>
+      <a class="button shadow shadow-color button-yellow">button yellow</a>
+    </p>
+    <p>
+      <a class="button shadow shadow-color button-line button-grey">button grey</a>
+      <a class="button shadow shadow-color button-line button-red">button red</a>
+      <a class="button shadow shadow-color button-line button-blue">button blue</a>
+      <a class="button shadow shadow-color button-line button-green">button green</a>
+      <a class="button shadow shadow-color button-line button-yellow">button yellow</a>
+    </p>
+  </div>
+
+<hr>
+
+  <div id="table-style">
+
+    <div id="default-table-style">
+      <h2>表格 ( 默认样式 ) </h2>
+      <p>用法：<code>table class="<strong>table</strong>"</code></p>
+      <p>已知问题：<code>tfoot</code> 中使用 <code>:last-child</code> 获取最后一个元素，不支持 IE 低版本。</p>
+      <table class="table">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div id="striped-table-style">
+      <h2>表格 ( 条纹 )</h2>
+      <p>用法：<code>table class="table <strong>table-striped</strong>"</code></p>
+      <p>已知问题：用了 <code>:nth-child</code> 所以不支持 IE 低版本。</p>
+      <table class="table table-striped">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="bordered-table-style">
+      <h2>表格 ( 描边 )</h2>
+      <p>用法：<code>table class="table <strong>table-border</strong>"</code></p>
+      <table class="table table-border">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td rowspan="2">表格数据 ( rowspan="2" )</td>
+          </tr>
+          <tr>
+            <td colspan="2">表格数据 ( colspan="2" ) </td>
+            <!-- colspan -->
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <!-- rowspan -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="hover-table-style">
+      <h2>表格 ( 鼠标悬停 )</h2>
+      <p>用法：<code>table class="table <strong>table-hover</strong>"</code></p>
+      <table class="table table-hover">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="condensed-table-style">
+      <h2>表格 ( 紧凑 )</h2>
+      <p>用法：<code>table class="table <strong>table-condensed</strong>"</code></p>
+      <table class="table table-condensed">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="table-cell-colors">
+      <h2>表格颜色</h2>
+      <p>用法：<code>class="<strong>grey</strong> or <strong>green</strong> or <strong>blue</strong> or <strong>yellow</strong> or <strong>red</strong>"</code></p>
+      <table class="table">
+        <caption>这是一个表格标题（可选）。</caption>
+        <thead>
+        <tr>
+            <th>表头 1</th>
+            <th>表头 2</th>
+            <th>表头 3</th>
+            <th>表头 4</th>
+            <th>表头 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grey">
+            <td>表格数据 ( <code>class="grey"</code> ) </td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr class="green">
+            <td>表格数据 ( <code>class="green"</code> ) </td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td class="blue">表格数据 ( <code>class="blue"</code> ) </td>
+            <td>表格数据</td>
+            <td class="yellow">表格数据 ( <code>class="yellow"</code> ) </td>
+            <td>表格数据</td>
+          </tr>
+          <tr class="red">
+            <td>表格数据 ( <code>class="red"</code> ) </td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+          <tr>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+            <td>表格数据</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+<hr>
+
+  <div id="tip-bar">
+
+    <div id="default-style">
+      <h2>提示栏 ( 默认样式 )</h2>
+      <p>用法：<code>div class="tipbar tipbar-*color_name*"</code></p>
+      <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+      <div class="tipbar">
+        <p>This is a tip bar test. Color Default ( Grey )</p>
+      </div>
+      <div class="tipbar tipbar-red">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-green">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-blue">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-yellow">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+    </div>
+
+    <div id="colored-style">
+      <h2>提示栏 ( 彩色 )</h2>
+      <p>用法：<code>div class="tipbar <strong>tipbar-color</strong> tipbar-*color_name*"</code></p>
+      <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+      <div class="tipbar tipbar-color">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-red">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-green">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-blue">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-yellow">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+    </div>
+
+    <div id="colored-shadow-style">
+      <h2>提示栏 ( 彩色阴影 )</h2>
+      <p>用法：<code>div class="tipbar <strong>tipbar-color-shadow</strong> tipbar-*color_name*"</code></p>
+      <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+      <div class="tipbar tipbar-color-shadow">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-color-shadow tipbar-red">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-color-shadow tipbar-green">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-color-shadow tipbar-blue">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-color-shadow tipbar-yellow">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+
+      <div class="tipbar tipbar-color tipbar-color-shadow">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-red">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-green">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-blue">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-yellow">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+    </div>
+
+    <div id="line-style">
+      <h2>提示栏 ( 描线 )</h2>
+      <p>用法：<code>div class="tipbar <strong>tipbar-line</strong> tipbar-*color_name*"</code></p>
+      <p>已知问题：用了 <code>box-shadow</code> 所以不支持 IE 低版本。</p>
+      <div class="tipbar tipbar-line">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-red">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-green">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-blue">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-yellow">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+    </div>
+
+    <div id="rounded-style">
+      <h2>提示栏 ( 圆角 )</h2>
+      <p>用法：<code>div class="tipbar <strong>tipbar-rounded</strong> tipbar-*color_name*"</code></p>
+      <p>已知问题：用了 <code>box-shadow</code> 和 <code>border-radius</code> 所以不支持 IE 低版本。</p>
+      <div class="tipbar tipbar-line tipbar-rounded">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-red tipbar-rounded">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-green tipbar-rounded">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-blue tipbar-rounded">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-line tipbar-yellow tipbar-rounded">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-rounded">
+        <p>This is a tip bar test. Color Default ( Grey ) </p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-red tipbar-rounded">
+        <p>This is a tip bar test. Color Red</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-green tipbar-rounded">
+        <p>This is a tip bar test. Color Green</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-blue tipbar-rounded">
+        <p>This is a tip bar test. Color Blue</p>
+      </div>
+      <div class="tipbar tipbar-color tipbar-color-shadow tipbar-yellow tipbar-rounded">
+        <p>This is a tip bar test. Color Yellow</p>
+      </div>
+    </div>
+
+  </div>
+
+<hr>
+
+  <div id="input-box-style">
+
+    <div id="input-box-default">
+      <h2>输入框 ( Text &amp; Password 类型 ) </h2>
+      <p>用法：<code>input class="input input-text"</code></p>
+      <p>
+        <label for="input-box-input-1">Input Text:</label>
+        <input type="text" class="input input-text" id="input-box-input-1" placeholder="Input Type: text">
+        <label for="input-box-input-2">Input Password:</label>
+        <input type="password" class="input input-text" id="input-box-input-2" placeholder="Input Type: Password">
+        <input type="submit" class="button button-blue button-line" value="Submit Button">
+      </p>
+
+      <p>添加 <code>span*</code> 在 <code>class</code> 里面可以设置宽度。</p>
+      <p><input type="text" class="input input-text span1" placeholder="span1 60px"></p>
+      <p><input type="text" class="input input-text span2" placeholder="span2 100px"></p>
+      <p><input type="text" class="input input-text span3" placeholder="span3 200px"></p>
+      <p><input type="text" class="input input-text span4" placeholder="span4 250px"></p>
+      <p><input type="text" class="input input-text span5" placeholder="span5 320px"></p>
+      <p><input type="text" class="input input-text span6" placeholder="span6 400px"></p>
+      <p><input type="text" class="input input-text span7" placeholder="span7 450px"></p>
+      <p><input type="text" class="input input-text span8" placeholder="span8 500px"></p>
+      <p><input type="text" class="input input-text span9" placeholder="span9 600px"></p>
+      <p><input type="text" class="input input-text span10" placeholder="span10 680px"></p>
+
+    </div>
+
+    <div id="input-box-float">
+      <h2>输入框 ( 悬浮 ) </h2>
+      <p>用法：</p>
+      <pre>
+        &lt;div class="input-float"&gt;
+          &lt;label&gt;Input Label&lt;&#47;label&gt;
+          &lt;input type="text" class="input"&gt;
+        &lt;&#47;div&gt;
+      </pre>
+      <div class="input-float">
+        <label for="input-box-input-3">Input Float</label>
+        <input type="text" class="input span5" id="input-box-input-3" placeholder="Input Float">
+      </div>
+      <p><input type="submit" class="button button-green button-flat button-line" value="Submit Button"></p>
+    </div>
+
+    <div id="textarea-style">
+      <h2>Textarea</h2>
+      <p>用法：<code>textarea class="textarea input input-text"</code></p>
+      <p><textarea name="textarea_1" id="textarea_1" cols="30" rows="10" class="textarea input input-text span9" placeholder="class=&#34;textarea input input-text span9&#34; cols=&#34;30&#34;(ignored) rows=&#34;10&#34;"></textarea></p>
+      <p>用法：</p>
+      <pre>
+        &lt;div class="input-float"&gt;
+          &lt;label&gt;Input Label&lt;&#47;label&gt;
+          &lt;textarea type="text" class="input input-text"&gt;
+        &lt;&#47;div&gt;
+      </pre>
+      <div class="input-float">
+        <label for="textarea_2">Textarea Float</label>
+        <textarea class="input input-text span5" id="textarea_2" placeholder="Textarea Float"></textarea>
+      </div>
+    </div>
+
+    <div id="input-box-other">
+      <h2>输入框 ( 其它 ) </h2>
+      <!--
+      <p>用法：</p>
+      <pre>
+        &lt;div class="input-float"&gt;
+          &lt;label&gt;Input Label&lt;&#47;label&gt;
+          &lt;input type="text" class="input"&gt;
+        &lt;&#47;div&gt;
+      </pre>
+      -->
+      <h3>Input ( Type: file )</h3>
+      <p><input class="input" type="file" multiple="multiple"></p>
+      <p>添加 <code>multiple="multiple"</code> 则可多选文件。</p>
+
+      <h3>Input ( Type: date )</h3>
+      <p>已知问题：只有部分浏览器支持。</p>
+      <p>已支持： Chrome, Opera</p>
+      <p><input class="input" type="date" placeholder="Type: date"></p>
+
+      <h3>Input ( Type: search )</h3>
+      <p><input class="input" type="search" placeholder="Type: search"></p>
+
+      <h3>Input ( Type: number )</h3>
+      <p>已知问题：只有部分浏览器支持。</p>
+      <p>已支持： Chrome, Firefox, Opera</p>
+      <p><input type="number" class="input" min="0" max="100" step="2" placeholder="Type: number"></p>
+
+      <h3>Input ( Type: email )</h3>
+      <p>已知问题：只有部分浏览器支持。</p>
+      <p>已支持：Chrome, Firefox, Opera, IE(?)</p>
+      <p><input type="email" class="input" placeholder="Type: email"></p>
+
+      <h3>Input ( Type: url )</h3>
+      <p>已知问题：只有部分浏览器支持。</p>
+      <p>已支持：Chrome, Firefox, Opera</p>
+      <p><input type="url" class="input" list="url_list" placeholder="Type: url"></p>
+      <datalist id="url_list">
+        <option label="Baidu" value="http://www.baidu.com" />
+        <option label="Google" value="http://www.google.com" />
+        <option label="Microsoft" value="http://www.microsoft.com" />
+      </datalist>
+      <p>这个可以写一个 <code>&lt;datalist&gt;</code> 来快速填写。试试输入“Baidu”、“Google”或“Microsoft”。</p>
+
+      <h3>Input ( Type: color )</h3>
+      <p>已知问题：只有部分浏览器支持。</p>
+      <p>已支持：Chrome, Firefox, Opera</p>
+      <p><input type="color" class="input" placeholder="Type: color"></p>
+
+    </div>
+
+  </div>
+
+<hr>
+
+  <div id="notifications-style">
+    <h3>提示框</h3>
+    <p>用法：</p>
+    <pre>
+      jQuery().new_notification_window(title,content,color,link,link_blank,decode);
+    </pre>
+    <p>颜色编号：</p>
+    <ol start="0">
+      <li>灰色</li>
+      <li>红色</li>
+      <li>绿色</li>
+      <li>蓝色</li>
+      <li>黄色</li>
+    </ol>
+    <p>decode: 0 or 1 ( 将部分特殊字符转义，比如 <>，1 为开启，不填写则默认为 1 )</p>
+    <p>link_blank: 0 or 1 ( 新窗口打开链接，1 为开启，不填写则默认为 0 ) </p>
+    <script>
+    var n_i = 0;
+    jQuery(document).on('click','#add_notification_1',
+        function () {
+          n_i = n_i + 1;
+          var title = jQuery('#n_notifications_input_title').val();
+          var content = jQuery('#n_notifications_input_content').val();
+          var color = jQuery('#n_notifications_input_color').val();
+          var link = jQuery('#n_notifications_input_link').val();
+          jQuery().new_notification_window(title,content,color,link,link_blank,decode);
+          console.log("计数: " + n_i);
+        }
+      );
+    </script>
+    <p class="input-float">
+      <label for="n_notifications_input_title">标题</label>
+      <input type="text" class="input input-text span4" id="n_notifications_input_title" placeholder="Test title here">
+    </p>
+    <p class="input-float">
+      <label for="n_notifications_input_color">颜色</label>
+      <input type="number" min="0" max="4" step="1" class="input input-text span4" id="n_notifications_input_color" value="0" placeholder="Test color here">
+    </p>
+    <p class="input-float">
+      <label for="n_notifications_input_link">链接</label>
+      <input type="url" list="url_list" class="input input-text span4" id="n_notifications_input_link" placeholder="Test link here">
+    </p>
+    <p class="input-float">
+      <label for="n_notifications_input_content">内容</label>
+      <textarea class="input input-text span6" id="n_notifications_input_content" placeholder="Test content here"></textarea>
+    </p>
+    <p>
+      <button class="button button-blue" id="add_notification_1">添加通知</button>
+    </p>
+  </div>
+
+  <div id="notifications-block-style">
+    <h3>小提示块</h3>
+    <p>用法：</p>
+    <pre>
+      jQuery().new_notification_block(content,color);
+    </pre>
+    <p>颜色编号：</p>
+    <ol start="0">
+      <li>灰色</li>
+      <li>红色</li>
+      <li>绿色</li>
+      <li>蓝色</li>
+      <li>黄色</li>
+    </ol>
+    <p>此处内容的特殊符号必定转义。</p>
+    <script>
+    var n_b_i = 0;
+    jQuery(document).on('click','#add_notification_block_1',
+        function () {
+          n_b_i = n_b_i + 1;
+          var content = jQuery('#n_notifications_block_input_content').val();
+          var color = jQuery('#n_notifications_block_input_color').val();
+          jQuery().new_notification_block(content,color);
+          console.log("计数: " + n_b_i);
+        }
+      );
+    </script>
+    <p class="input-float">
+      <label for="n_notifications_block_input_color">颜色</label>
+      <input type="number" min="0" max="4" step="1" class="input input-text span4" id="n_notifications_block_input_color" value="0" placeholder="Test color here">
+    </p>
+    <p class="input-float">
+      <label for="n_notifications_input_content">内容</label>
+      <textarea class="input input-text span6" id="n_notifications_block_input_content" placeholder="Test content here"></textarea>
+    </p>
+    <p>
+      <button class="button button-blue" id="add_notification_block_1">添加通知</button>
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+<!--
+<aside id="guide-list">
+  <ul>
+    <li><a href="#buttons">&times; Buttons</a></li>
+    <ol>
+      <li><a href="#default-bottons">Default Size</a></li>
+      <li><a href="#rounded-buttons">Rounded</a></li>
+      <li><a href="#flat-buttons">Flat</a></li>
+      <li><a href="#line-buttons">Line</a></li>
+      <li><a href="#disabled-buttons">Disabled</a></li>
+      <li><a href="#shadowed-buttons">Shadowed</a></li>
+      <li><a href="#color-shadowed-buttons">Color Shadowed</a></li>
+    </ol>
+  </ul>
+</aside>
+-->
+<footer class="main-footer">
+  <p>IE Eat Shit</p>
+</footer>
+
+</body>
+</html>
